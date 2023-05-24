@@ -1,50 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age Calculator</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/af2c36a6c3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="main">
       <div class="container">
-        <div class="input_section">
-          <input
-            id="Day"
-            minlength="1"
-            maxlength="2"
-            type="number"
-            placeholder="DD"
-          />
-          <p
-            id="field"
-            style="position: absolute; top: 124px; left: 65px; color: brown"
-          ></p>
-          <input
-            id="Month"
-            minlength="1"
-            maxlength="2"
-            type="number"
-            placeholder="MM"
-          />
-          <input
-            id="Year"
-            minlength="1"
-            maxlength="4"
-            type="number"
-            placeholder="YYYY"
-          />
+        <h1 class="buggy">Buggy Calculator</h1>
+        <h3 class="enter">Enter DOB</h3>
+        <h5 class="y">Year</h5>
+        <h5 class="m">Month</h5>
+        <h5 class="d">Day</h5>
+        <div>
+          <div class="input_section">
+            <input type="number" placeholder="DD" id="inpday" />
+            <input type="number" placeholder="MM" id="inpmon" />
+            <input type="number" placeholder="YY" id="inpyea" />
+          </div>
+          <button onclick="calculateAge()">Calculate</button>
         </div>
-        <button id="btn" onclick="run()">Generate</button>
         <div class="output_section">
-          <h1 id="Age_year" style="color: blueviolet">__Year</h1>
-          <h1 id="Age_month" style="color: blueviolet">__Month</h1>
-          <h1 id="Age_day" style="color: blueviolet">__Day</h1>
+          <div id="year">Year</div>
+          <div id="month">Month</div>
+          <div id="day">Days</div>
         </div>
       </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
