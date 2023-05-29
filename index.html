@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/af2c36a6c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1 class="buggy">Buggy Calculator</h1>
+        <h3 class="enter">Enter DOB</h3>
+        <h5 class="y">Year</h5>
+        <h5 class="m">Month</h5>
+        <h5 class="d">Day</h5>
+        <div>
+          <div class="input_section">
+            <input type="number" placeholder="DD" id="inpday" />
+            <input type="number" placeholder="MM" id="inpmon" />
+            <input type="number" placeholder="YY" id="inpyea" />
+          </div>
+          <button onclick="calculateAge()">Calculate</button>
+        </div>
+        <div class="output_section">
+          <div id="year">Year</div>
+          <div id="month">Month</div>
+          <div id="day">Days</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
